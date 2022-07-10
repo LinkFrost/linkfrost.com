@@ -1,0 +1,18 @@
+import Image from "next/image";
+
+export default function Header() {
+  return (
+    <div className="flex justify-between content-center max-w-3xl mt-5 mb-5 w-full border-b-2 border-red-300 ">
+      <div className="flex flex-col pr-8">
+        <h1 className="font-bold text-3xl sm:text-5xl text-white">Ashir Imran</h1>
+        <h2 className="text-xl sm:text-3xl text-red-300 mb-5">aka LinkFrost</h2>
+        <p className="mb-5 max-w-md">
+          Hello there! My name's Ashir, I'm a CS student at UMass Amherst, aspiring to be a Software Engineer, interested in full stack development. I love all sorts of topics in Computer Science, but in my free time I also dabble in some other hobbies, such as music and music production, which you can read about in the blog section.
+        </p>
+      </div>
+      <div className="mb-5">
+        <Image className="shadow rounded-full" src="/img/ImranAshir.jpg" height={200} width={200}></Image>
+      </div>
+    </div>
+  );
+}
