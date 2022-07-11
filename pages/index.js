@@ -1,9 +1,9 @@
 import Header from "../components/Header.js";
 import Navbar from "../components/Navbar.js";
-import DividerLine from "../components/DividerLine.js";
 import Projects from "../components/Projects.js";
 import SkillsInterests from "../components/SkillsInterests.js";
 import Footer from "../components/Footer.js";
+import LatestBlogPosts from "../components/LatestBlogPosts.js";
 
 export default function Home() {
   return (
@@ -13,6 +13,7 @@ export default function Home() {
         <Header></Header>
         <SkillsInterests></SkillsInterests>
         <Projects></Projects>
+        <LatestBlogPosts></LatestBlogPosts>
       </main>
       <Footer></Footer>
     </div>
