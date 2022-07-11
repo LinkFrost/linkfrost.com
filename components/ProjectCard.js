@@ -8,12 +8,12 @@ export default function ProjectCard(props) {
       <p className="text-sm mb-2">{props.description}</p>
       <div className="flex justify-between space-x-8">
         {props.link && (
-          <a className="text-blue-400" href={props.link} target="_blank">
+          <a className="text-blue-400" href={props.link} target="_blank" rel="noreferrer">
             Link
           </a>
         )}
         {props.repo && (
-          <a className="text-gray-300" href={props.repo} target="_blank">
+          <a className="text-gray-300" href={props.repo} target="_blank" rel="noreferrer">
             Repository
           </a>
         )}
