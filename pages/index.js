@@ -7,7 +7,7 @@ import LatestBlogPosts from "../components/LatestBlogPosts.js";
 
 export default function Home() {
   return (
-    <div className="flex flex-col justify-center items-center px-8 pb-16">
+    <div className="flex flex-col justify-center items-center px-8">
       <Navbar></Navbar>
       <main className="overflow-y-scroll flex flex-col justify-center max-w-3xl w-full">
         <Header></Header>
