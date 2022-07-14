@@ -38,13 +38,15 @@ export async function getStaticProps(props) {
 }
 
 export default function BlogPostPage({ slug, frontMatter, content }) {
-  const { title, date, category, cover_image } = frontMatter;
+  const { title, date, category, cover_image, excerpt } = frontMatter;
 
   console.log(marked(content));
 
   return (
     <div className="flex flex-col justify-center items-center px-8">
       <Head>
+        <meta name="title" content={title}></meta>
+        <meta name="excerpt" content={excerpt}></meta>
         <title>{title} - LinkFrost</title>
       </Head>
       <Navbar></Navbar>
