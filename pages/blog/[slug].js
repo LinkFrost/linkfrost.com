@@ -45,8 +45,8 @@ export default function BlogPostPage({ slug, frontMatter, content }) {
   return (
     <div className="flex flex-col justify-center items-center px-8">
       <Head>
-        <meta name="title" content={title}></meta>
-        <meta name="excerpt" content={excerpt}></meta>
+        <meta property="og:title" content={title}></meta>
+        <meta property="og:description" content={excerpt}></meta>
         <title>{title} - LinkFrost</title>
       </Head>
       <Navbar></Navbar>
