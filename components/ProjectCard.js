@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function ProjectCard(props) {
   return (
     <div className="sm:aspect-square relative flex flex-col items-center rounded-xl border-2 border-red-200 bg-neutral-900 shadow-md shadow-black hover:shadow-xl hover:shadow-zinc-800 p-2">

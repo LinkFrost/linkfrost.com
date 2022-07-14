@@ -10,6 +10,56 @@ body {
   overflow: none;
 }
 
+@layer components {
+  .markdown {
+    @apply mt-5;
+  }
+
+  .markdown p {
+    @apply mb-5;
+  }
+
+  .markdown h1 {
+    @apply font-bold text-2xl sm:text-4xl text-white mb-5;
+  }
+
+  .markdown h2 {
+    @apply font-bold text-xl sm:text-3xl text-white mb-5;
+  }
+
+  .markdown img {
+  }
+
+  .markdown ol,
+  ul {
+    @apply mb-5 list-decimal;
+  }
+
+  .markdown code {
+    @apply bg-slate-800 p-2 w-full mb-2;
+  }
+
+  .markdown code,
+  pre {
+    @apply mb-5;
+  }
+
+  .markdown hr {
+    @apply border border-red-200 mt-5 mb-5;
+  }
+
+  .markdown a {
+    @apply text-blue-400;
+  }
+}
+
+@layer base {
+  ul,
+  ol {
+    list-style: revert;
+  }
+}
+
 /* @font-face {
   font-family: "IBM Plex Sans";
   font-style: normal;

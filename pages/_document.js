@@ -4,7 +4,6 @@ export default function Document() {
   return (
     <Html className="dark dark:bg-neutral-900" style={{ colorScheme: "dark" }}>
       <Head>
-        <title>LinkFrost</title>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
         <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap" rel="stylesheet" />
