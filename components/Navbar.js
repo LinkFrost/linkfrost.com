@@ -7,7 +7,9 @@ export default function Navbar() {
         <Link href="/">
           <a className="hover:text-blue-400">Home</a>
         </Link>
-        <a className="hover:text-blue-400">Projects</a>
+        <Link href="/projects">
+          <a className="hover:text-blue-400">Projects</a>
+        </Link>
         <a className="hover:text-blue-400" href="/AshirImranResume.pdf" target="_blank">
           Resume
         </a>
