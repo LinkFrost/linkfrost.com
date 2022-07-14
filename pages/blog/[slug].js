@@ -47,6 +47,7 @@ export default function BlogPostPage({ slug, frontMatter, content }) {
       <Head>
         <meta property="og:title" content={title}></meta>
         <meta property="og:description" content={excerpt}></meta>
+        <meta property="og:image" content="img/Cropped.png"></meta>
         <title>{title} - LinkFrost</title>
       </Head>
       <Navbar></Navbar>

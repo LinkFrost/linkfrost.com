@@ -10,6 +10,9 @@ export default function ProjectsPage(props) {
   return (
     <div className="flex flex-col justify-center items-center px-8">
       <Head>
+        <meta property="og:title" content="Projects - LinkFrost"></meta>
+        <meta property="og:description" content="Project Portfolio"></meta>
+        <meta property="og:image" content="img/Cropped.png"></meta>
         <title>Projects - LinkFrost</title>
       </Head>
       <Navbar></Navbar>

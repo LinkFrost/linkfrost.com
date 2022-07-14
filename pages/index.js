@@ -40,6 +40,9 @@ export default function Home(props) {
   return (
     <div className="flex flex-col justify-center items-center px-8">
       <Head>
+        <meta property="og:title" content="LinkFrost"></meta>
+        <meta property="og:description" content="Personal site, portfolio, and blog for Ashir Imran."></meta>
+        <meta property="og:image" content="img/Cropped.png"></meta>
         <title>LinkFrost</title>
       </Head>
       <Navbar></Navbar>

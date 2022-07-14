@@ -35,6 +35,9 @@ export default function Blog(props) {
   return (
     <div className="flex flex-col justify-center items-center px-8">
       <Head>
+        <meta property="og:title" content="Blog - LinkFrost"></meta>
+        <meta property="og:description" content="This is where I write about all sorts of things, though mainly it will be split between things in Computer Science, my thoughts on music I'm listening to (primarily Hip-Hop!), and any other thing I feel like writing in length about."></meta>
+        <meta property="og:image" content="img/Cropped.png"></meta>
         <title>Blog - LinkFrost</title>
       </Head>
       <Navbar></Navbar>
