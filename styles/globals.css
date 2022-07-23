@@ -27,6 +27,10 @@ body {
     @apply font-bold text-xl sm:text-3xl text-white mb-5;
   }
 
+  .markdown h4 {
+    @apply font-bold text-3xl sm:text-5xl text-white mb-5;
+  }
+
   .markdown img {
   }
 

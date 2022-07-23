@@ -52,7 +52,7 @@ export default function BlogPostPage({ slug, frontMatter, content }) {
       </Head>
       <Navbar></Navbar>
       <main className="overflow-y-scroll flex flex-col justify-center lg:max-w-3xl sm:max-w-2xl w-full mt-5 mb-5">
-        <h1 className="font-bold text-3xl sm:text-5xl text-white mb-1">{title}</h1>
+        <h1 className="font-bold text-3xl sm:text-5xl text-white mb-3">{title}</h1>
         <div className="flex items-center space-x-4 mb-5">
           <h4 className="text-md sm:text-lg text-white">{date}</h4>
           <div className="flex bg-red-100 rounded-xl max-w-fit m-0 pt-0 pb-1 px-2">
