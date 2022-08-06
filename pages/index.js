@@ -46,7 +46,7 @@ export default function Home(props) {
         <title>LinkFrost</title>
       </Head>
       <Navbar></Navbar>
-      <main className="overflow-y-scroll flex flex-col justify-center lg:max-w-3xl sm:max-w-2xl w-full">
+      <main className="overflow-y-scroll flex flex-col justify-center lg:max-w-3xl  w-full">
         <Header></Header>
         <SkillsInterests></SkillsInterests>
         <Projects></Projects>
