@@ -1,6 +1,6 @@
 export default function SkillsInterests() {
   return (
-    <div className="flex flex-col justify-between content-center max-w-3xl mb-5 w-full border-b-2 border-red-200 border-opacity-100">
+    <div className="flex flex-col justify-between content-center max-w-3xl mb-5 w-full border-b-0 border-red-200 border-opacity-100">
       <h2 className="font-bold text-xl sm:text-3xl text-white mb-5">Skills and Interests</h2>
       <div className="flex justify-center">
         <h2 className="text-md sm:text-xl text-white mb-3">Programming Languages & SWE Tools</h2>

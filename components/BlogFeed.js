@@ -4,7 +4,7 @@ export default function BlogFeed({ post }) {
   const { title, date, category, excerpt, cover_image } = post.frontMatter;
 
   return (
-    <div className="flex flex-col bg-neautral-900 border-2 rounded-xl border-red-200 shadow-black shadow-md p-2 mb-5">
+    <div className="flex flex-col bg-neautral-900 border-1 rounded-xl border-red-200 bg-neutral-800 shadow-black shadow-md p-3 mb-5">
       <Link href={`/blog/${post.slug}`}>
         <h2 className="font-bold text-xl sm:text-3xl text-white hover:text-blue-400">{title}</h2>
       </Link>

@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard.js";
 
 export default function Projects() {
   return (
-    <div className="flex flex-col justify-between content-center border-b-2 border-red-200 max-w-3xl mb-5">
+    <div className="flex flex-col justify-between content-center border-b-0 border-red-200 max-w-3xl mb-5">
       <h2 className="font-bold text-xl sm:text-3xl text-white mb-5">Projects</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-between mb-5">
         <ProjectCard projectTitle="LoneMusic" description="Social media website for uploading song instrumentals and vocal covers." imgSrc="/img/LoneMusicLogo.png" link="https://lonemusic.herokuapp.com/" repo="https://github.com/joepetrillo/cs326-final-bullymaguire"></ProjectCard>
