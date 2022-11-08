@@ -16,7 +16,7 @@ export default function ProjectsPage(props) {
         <title>Projects - LinkFrost</title>
       </Head>
       <Navbar></Navbar>
-      <main className="flex flex-col justify-center lg:max-w-3xl sm:max-w-2xl w-full">
+      <main className="flex flex-col justify-center lg:max-w-3xl sm:max-w-2xl w-full mt-5">
         <Projects></Projects>
       </main>
       <Footer></Footer>
