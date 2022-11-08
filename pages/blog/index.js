@@ -41,7 +41,7 @@ export default function Blog(props) {
         <title>Blog - LinkFrost</title>
       </Head>
       <Navbar></Navbar>
-      <main className="overflow-y-scroll flex flex-col justify-center lg:max-w-3xl sm:max-w-2xl w-full mt-5">
+      <main className="flex flex-col justify-center lg:max-w-3xl sm:max-w-2xl w-full mt-5">
         <h1 className="font-bold text-3xl sm:text-5xl text-white mb-5">Blog</h1>
         <p className="mb-5">This is where I write about all sorts of things, though mainly it will be split between things in Computer Science, my thoughts on music I'm listening to (primarily Hip-Hop!), and any other thing I feel like writing in length about.</p>
         <h2 className="font-bold text-xl sm:text-3xl text-white mt-5 mb-5">Latest Posts</h2>
