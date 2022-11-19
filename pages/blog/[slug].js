@@ -15,6 +15,8 @@ export async function getStaticPaths() {
     },
   }));
 
+  console.log(paths);
+
   return {
     paths,
     fallback: false,
@@ -28,19 +30,32 @@ export async function getStaticProps(props) {
   const mdWithMeta = fs.readFileSync(path.join("posts", slug + ".md"), "utf-8");
   const { data: frontMatter, content } = matter(mdWithMeta);
 
-  return {
-    props: {
-      slug,
-      frontMatter,
-      content,
-    },
-  };
+  if (slug !== undefined) {
+    return {
+      props: {
+        slug,
+        frontMatter,
+        content,
+      },
+    };
+  }
 }
 
 export default function BlogPostPage({ slug, frontMatter, content }) {
   const { title, date, category, cover_image, excerpt } = frontMatter;
 
-  console.log(marked(content));
+  let categoryColor = "";
+
+  switch (category) {
+    case "music":
+      categoryColor = "bg-red-700";
+      break;
+    case "cs":
+      categoryColor = "bg-blue-700";
+      break;
+    default:
+      categoryColor = "bg-gray-700";
+  }
 
   return (
     <div className="flex flex-col justify-center items-center px-8">
@@ -51,12 +66,12 @@ export default function BlogPostPage({ slug, frontMatter, content }) {
         <title>{title} - LinkFrost</title>
       </Head>
       <Navbar></Navbar>
-      <main className="overflow-y-scroll flex flex-col justify-center lg:max-w-3xl sm:max-w-2xl w-full mt-5 mb-5">
+      <main className="flex flex-col justify-center lg:max-w-3xl sm:max-w-2xl w-full mt-5 mb-5">
         <h1 className="font-bold text-3xl sm:text-5xl text-white mb-3">{title}</h1>
         <div className="flex items-center space-x-4 mb-5">
           <h4 className="text-md sm:text-lg text-white">{date}</h4>
-          <div className="flex bg-red-100 rounded-xl max-w-fit m-0 pt-0 pb-1 px-2">
-            <h1 className="text-sm sm:text-md text-black">{category}</h1>
+          <div className={`flex ${categoryColor} rounded-md max-w-fit m-0 pt-0 pb-1 px-2`}>
+            <h1 className="text-sm sm:text-md text-white">{category}</h1>
           </div>
         </div>
         <img style={{ height: "auto", width: "300px", objectFit: "contain" }} src={cover_image}></img>

@@ -10,7 +10,7 @@ import Footer from "../components/Footer.js";
 import LatestBlogPosts from "../components/LatestBlogPosts.js";
 
 export async function getStaticProps() {
-  const mdFiles = fs.readdirSync(path.join("posts"));
+  const mdFiles = fs.readdirSync(path.join("posts")).filter((m) => m !== ".DS_Store");
 
   const posts = mdFiles.map((f) => {
     const slug = f.replace(".md", "");
@@ -22,8 +22,6 @@ export async function getStaticProps() {
       frontMatter,
     };
   });
-
-  console.log(posts);
 
   return {
     props: {
