@@ -57,7 +57,7 @@ export default function Blog(props) {
       <div>
         {trigger}
         {open ? (
-          <ul className={`absolute`}>
+          <ul className="absolute w-32">
             {menu.map((item, index) => (
               <li className="list-none bg-neutral-700 hover:bg-neutral-500" key={index}>
                 <button
@@ -116,11 +116,11 @@ export default function Blog(props) {
             <Dropdown
               open={open}
               trigger={
-                <div className="flex items-center gap-2">
-                  <button onClick={() => setOpen(!open)}>
+                <div className="flex items-center">
+                  <button className="flex items-center" onClick={() => setOpen(!open)}>
                     <h2 className={`font-semibold text-md sm:text-xl text-white ${filterColor} w-20 flex px-2`}>Filter:</h2>
+                    {category}
                   </button>
-                  {category}
                 </div>
               }
               menu={["none"].concat(Array.from(categories))}

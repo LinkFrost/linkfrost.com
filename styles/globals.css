@@ -36,7 +36,7 @@ body {
   }
 
   .markdown ol,
-  ul {
+  .markdown ul {
     @apply pl-8;
   }
 
