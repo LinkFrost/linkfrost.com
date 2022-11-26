@@ -65,7 +65,7 @@ export default function BlogPostPage({ slug, frontMatter, content }) {
         <meta name="twitter:title" content={title}></meta>
         <meta name="twitter:description" content={excerpt}></meta>
         <meta name="twitter:image" content="img/Cropped.png"></meta>
-        <meta name="twitter:card" content="summary_small_image"></meta>
+        <meta name="twitter:card" content="summary"></meta>
         <title>{title} - LinkFrost</title>
       </Head>
       <Navbar></Navbar>
