@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function Navbar() {
   return (
     <div className="sticky top-0 max-w-3xl w-full z-10">
-      <nav className="text-sm sm:text-base sticky top-0 z-10 flex items-center justify-between m-0 px-12 h-16 max-w-3xl w-full bg-neutral-900 bg-opacity-100">
+      <nav className="text-sm sm:text-base sticky top-0 z-10 flex items-center justify-between m-0 h-16 max-w-3xl w-full bg-neutral-900 bg-opacity-100">
         <Link href="/">
           <a className="hover:text-blue-400">Home</a>
         </Link>

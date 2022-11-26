@@ -16,7 +16,7 @@ body {
   }
 
   .markdown img {
-    @apply max-w-screen-sm h-auto;
+    @apply h-auto;
   }
 
   .markdown p {
