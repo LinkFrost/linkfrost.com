@@ -5,7 +5,7 @@ export default function SkillsInterests() {
       <div className="flex justify-center">
         <h2 className="text-md sm:text-xl text-white mb-3">Programming Languages & SWE Tools</h2>
       </div>
-      <div className="grid grid-cols-3 md:grid-cols-9 gap-10 md:gap-6 justify-between m-auto mb-5">
+      <div className="grid grid-cols-3 sm:grid-rows-2 sm:grid-cols-5 md:grid-rows-none md:grid-cols-9 md:gap-10 gap-12 justify-between m-auto mb-5">
         <img style={{ height: "50px", width: "auto" }} src="/img/JSLogo.png" alt="Javascript"></img>
         <img style={{ height: "50px", width: "auto" }} src="/img/HTMLLogo.png" alt="HTML"></img>
         <img style={{ height: "50px", width: "auto" }} src="/img/CSSLogo.png" alt="CSS"></img>

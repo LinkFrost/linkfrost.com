@@ -15,6 +15,10 @@ body {
     @apply mt-5;
   }
 
+  .markdown img {
+    @apply max-w-screen-sm h-auto;
+  }
+
   .markdown p {
     @apply mb-5;
   }
@@ -31,12 +35,9 @@ body {
     @apply font-bold text-3xl sm:text-5xl text-white mb-5;
   }
 
-  .markdown img {
-  }
-
   .markdown ol,
   ul {
-    @apply mb-5 list-decimal;
+    @apply pl-8;
   }
 
   .markdown code {
@@ -55,6 +56,10 @@ body {
   .markdown a {
     @apply text-blue-400;
   }
+
+  /* .markdown ul {
+    @apply list-none;
+  } */
 }
 
 @layer base {
@@ -63,12 +68,3 @@ body {
     list-style: revert;
   }
 }
-
-/* @font-face {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 100 900;
-  font-display: optional;
-  src: local("IBM Plex Sans") url(/public/fonts/ibm-plex-sans-var.woff2) format("woff2");
-  color: red;
-} */

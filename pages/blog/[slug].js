@@ -15,8 +15,6 @@ export async function getStaticPaths() {
     },
   }));
 
-  console.log(paths);
-
   return {
     paths,
     fallback: false,
@@ -66,7 +64,7 @@ export default function BlogPostPage({ slug, frontMatter, content }) {
         <title>{title} - LinkFrost</title>
       </Head>
       <Navbar></Navbar>
-      <main className="flex flex-col justify-center lg:max-w-3xl sm:max-w-2xl w-full mt-5 mb-5">
+      <main className="flex flex-col justify-center max-w-3xl w-full mt-5 mb-5">
         <h1 className="font-bold text-3xl sm:text-5xl text-white mb-3">{title}</h1>
         <div className="flex items-center space-x-4 mb-5">
           <h4 className="text-md sm:text-lg text-white">{date}</h4>
