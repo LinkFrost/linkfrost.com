@@ -7,8 +7,17 @@ export default function Projects() {
       <div className="flex justify-center">
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-between mb-5">
           <ProjectCard projectTitle="LoneMusic" description="Social media website for uploading song instrumentals and vocal covers." imgSrc="/img/LoneMusicLogo.png" link="https://lonemusic.herokuapp.com/" repo="https://github.com/joepetrillo/cs326-final-bullymaguire"></ProjectCard>
+
           <ProjectCard projectTitle="Group Quotes Bot" description="Discord bot for saving quotations to a database, and viewing them back in a server." imgSrc="/img/GroupQuotesLogo.jpg" repo="https://github.com/LinkFrost/Group-Quotes-Discord-Bot"></ProjectCard>
-          <ProjectCard projectTitle="Star Wars Explorer" description="A way to look up basic information about Star Wars characters, ships, movies, and more." imgSrc="/img/SWExplorerLogo.png" repo="https://github.com/LinkFrost/Star-Wars-Explorer"></ProjectCard>
+
+          <ProjectCard
+            projectTitle="Star Wars Explorer"
+            description="A way to look up basic information about Star Wars characters, ships, movies, and more."
+            imgSrc="/img/SWExplorerLogo.png"
+            link="https://sw-explorer.linkfrost.com"
+            repo="https://github.com/LinkFrost/Star-Wars-Explorer"
+          ></ProjectCard>
+
           <ProjectCard projectTitle="EJMR Annotation Project" description="NLP task focused on classifying the toxicity of posts on the EJMR website." imgSrc="/img/CodeBracket.png" repo="https://github.com/LinkFrost/EJMR-Annotation-Project"></ProjectCard>
         </div>
       </div>
