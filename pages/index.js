@@ -48,7 +48,7 @@ export default function Home(props) {
       <Navbar></Navbar>
       <main className="flex flex-col justify-center max-w-3xl  w-full">
         <Header></Header>
-        <SkillsInterests></SkillsInterests>
+        {/* <SkillsInterests></SkillsInterests> */}
         <Projects></Projects>
         <LatestBlogPosts posts={posts}></LatestBlogPosts>
       </main>

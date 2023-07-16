@@ -15,7 +15,7 @@ export default function ProjectCard(props) {
         )}
       </div>
       <div className="flex justify-center">
-        <img className="mb-2" style={{ height: "90px", width: "auto" }} src={props.imgSrc}></img>
+        <img className="mb-2" style={{ height: "60px", width: "auto" }} src={props.imgSrc}></img>
       </div>
       <p className="text-sm">{props.description}</p>
     </div>

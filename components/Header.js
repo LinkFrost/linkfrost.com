@@ -7,8 +7,8 @@ export default function Header() {
         <h1 className="font-bold text-3xl sm:text-5xl text-red-200">Ashir Imran</h1>
         <h2 className="text-xl sm:text-3xl text-red-400 mb-5">aka LinkFrost</h2>
         <p className="mb-5 max-w-md">
-          Hello there! My name's Ashir, I'm a CS student at UMass Amherst, aspiring to be a Software Engineer, interested in full stack development. I love all sorts of topics in Computer Science, but in my free time I also dabble in some other hobbies, such as music and music production, which you
-          can read about in the blog section.
+          Hello there! My name's Ashir, I'm a CS alumni from UMass Amherst, and I'm currently a Software Engineer at <span className="text-green-400 font-semibold">Citizens Bank</span>. I also dabble in some other hobbies, such as music, movies, and video games, which you can read about in the blog
+          section.
         </p>
       </div>
       <div className="flex justify-center sm:block mb-5">
