@@ -59,7 +59,7 @@ export default function BlogPostPage({ slug, frontMatter, content }) {
     <div className="flex flex-col justify-center items-center px-8">
       <Head>
         <title>{title} - LinkFrost</title>
-        <meta name="description" content="Last weekend, I participated in my first hackathon through HackUMass X, and I thought I'd write about my experience."></meta>
+        <meta name="description" content={excerpt}></meta>
 
         {/* <!-- Facebook Meta Tags --> */}
         <meta property="og:url" content={`https://www.linkfrost.com/blog/${slug}`}></meta>
