@@ -62,19 +62,19 @@ export default function BlogPostPage({ slug, frontMatter, content }) {
         <meta name="description" content="Last weekend, I participated in my first hackathon through HackUMass X, and I thought I'd write about my experience."></meta>
 
         {/* <!-- Facebook Meta Tags --> */}
-        <meta property="og:url" content="https://www.linkfrost.com/blog/my-first-hackathon-hackumass-x-experience"></meta>
+        <meta property="og:url" content={`https://www.linkfrost.com/blog/${slug}`}></meta>
         <meta property="og:type" content="website"></meta>
-        <meta property="og:title" content="My First Hackathon - HackUMass X Experience"></meta>
-        <meta property="og:description" content="Last weekend, I participated in my first hackathon through HackUMass X, and I thought I'd write about my experience."></meta>
-        <meta property="og:image" content="https://i.imgur.com/CBruj5J.png"></meta>
+        <meta property="og:title" content={title}></meta>
+        <meta property="og:description" content={excerpt}></meta>
+        <meta property="og:image" content={cover_image}></meta>
 
         {/* <!-- Twitter Meta Tags --> */}
         <meta name="twitter:card" content="summary_large_image"></meta>
         <meta property="twitter:domain" content="linkfrost.com"></meta>
-        <meta property="twitter:url" content="https://www.linkfrost.com/blog/my-first-hackathon-hackumass-x-experience"></meta>
-        <meta name="twitter:title" content="My First Hackathon - HackUMass X Experience"></meta>
-        <meta name="twitter:description" content="Last weekend, I participated in my first hackathon through HackUMass X, and I thought I'd write about my experience."></meta>
-        <meta name="twitter:image" content="https://i.imgur.com/CBruj5J.png"></meta>
+        <meta property="twitter:url" content={`https://www.linkfrost.com/blog/${slug}`}></meta>
+        <meta name="twitter:title" content={title}></meta>
+        <meta name="twitter:description" content={excerpt}></meta>
+        <meta name="twitter:image" content={cover_image}></meta>
       </Head>
       <Navbar></Navbar>
       <main className="flex flex-col justify-center max-w-3xl w-full mt-5 mb-5">

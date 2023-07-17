@@ -40,6 +40,7 @@ We also planned out these pages for the frontend:
 ### Microservices
 
 - TypeScript
+- Python
 - Express.js
 - Zod
 - RabbitMQ for communication (publish/subscribe model)
